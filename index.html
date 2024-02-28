@@ -1,107 +1,481 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-       </head>
-     <style>
-        #wrapper{
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-top: 200px;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swasthya saarthi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+</head>
+<style>
+  .icon {
+    width: 40px;
+    height: 32px;
+  }
 
-    .container{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        text-align: center;
-     
-    }
+  .learn {
+    width: 100%;
+    height: 225px;
+    padding: 15px;
+    border-radius: 25px;
+  }
+  .col-md-3{
+    display: flex;
+  }
+
+  .page-3 {
+    border-radius: 20px;
+  }
+
+  .page-1 {
+    border-radius: 20px;
+  }
+
+  .row {
+    text-align: center;
+  }
+
+  .spc {
+    width: 150px;
+    height: 150px;
+    margin-left: 33%;
+    margin-top: 10%;
+    border-radius: 50%;
+  }
+  #btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1px;
+}
+   #button-container{
+    color: white;
+    background-color:#0D6EFD;
+   
+   }
+  .btn-group-l {
+    margin-left: 50px;
+    padding-left: 70px;
+  }
 </style>
 
-<body >
+<body class="this bg-body-secondary">
+  <div class="container bg-body-secondary">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img class="icon" src="assets/icon.png" alt="icon">
+          <p style="font-weight: bold">Swasthya saarthi</p>
+        </a>
+      </div>
 
-    <div id="wrapper">
-        <div class="container d-flex align-items-center py-4 bg-body-tertiary">
-            <form>
-                <img class="mb-4" src="assets/icon.png" alt="" width="72" height="57">
-                <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-secondary"><p style="color: #0D6EFD;">Home</p></a></li>
+        <li><a href="#" class="nav-link px-2">Services</a></li>
+        <li><a href="#" class="nav-link px-2">Contact Us</a></li>
+        <li><a href="#" class="nav-link px-2">Help</a></li>
+        <li><a href="#" class="nav-link px-2">Blogs</a></li>
+      </ul>
+      
+      <div  class="col-md-3 text-end">
+
+        <form id="login-form"><button type="submit" id="button-container" style="margin-left: 95px;" class="btn btn-outline-primary me-2">Log-in </button>
+        </form>
+
+       
+
+        <form id="signup-form">
+          <button type="submit" id="button-cont" style="margin-left: 15px;" class="btn btn-primary">Signup</button>
+        </form>
+        
+      </div>
     
-                <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                </div>
-    
-                <div class="form-check text-start my-3">
-                    <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Remember me
-                    </label>
-                </div>
-               
-    
-                    <form id="login-form"><button class="btn btn-primary w-100 py-2" type="submit">Sign in
-                    </button>
-                    </form>
-                    
-                
-                
-            </form>
-            
-           
+    </header>
+
+
+
+
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img class="page-1" src="assets/page-1.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+          width="600" height="600" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Transforming Healthcare Delivery: Our Commitment to Effective Hospital Management Solutions.</h1>
+        <p class="lead">Welcome to Swasthya Saarthi, where we are dedicated to revolutionizing healthcare delivery through innovative management solutions. Our platform is designed to streamline hospital operations, enhance patient care, and empower healthcare professionals with powerful tools and insights. With a commitment to excellence and a focus on efficiency, we strive to be your trusted partner in navigating the complexities of modern healthcare management. Explore our comprehensive suite of services and discover how we can help your organization achieve new levels of success in delivering exceptional care.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Appointments</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4"style="color: white;background-color: #0D6EFD;">Watch Video</button>
         </div>
+      </div>
     </div>
-   
 
 
 
- <!DOCTYPE html>
- <html lang="en">
- <head>
- 
+    <!-- ------------------------------------------------------------------------------------- -->
 
 
 
 
 
+    <div class="container px-4 py-5 " id="icon-grid">
+      <h2 class="pb-2 border-bottom" style="text-align: center">Our results in numbers</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis" style="text-align: center">99%</h3>
+            <p>Customer satisfaction</p>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis" style="text-align: center">15k</h3>
+            <p>Online Patients</p>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis" style="text-align: center">12k</h3>
+            <p>Patients Recovered</p>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis" style="text-align: center">240%</h3>
+            <p>Company growth</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img class="page-3" src="assets/surgeon.jpg" class="d-block mx-lg-auto img-fluid" alt="surgeon" width="600"
+          height="450" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">You have lots of reasons to choose us</h1>
+        <p class="lead">Choose our hospital management solution for streamlined operations, scalability, security, and superior patient care.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get started</button>
+          <button type="button" style="color: white; background-color: #0D6EFD;" class="btn btn-outline-secondary btn-lg px-4">Talk to Sales</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- ------------------------------------------------------ -->
+
+
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">Services we provide</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Swasthya Saarthi provide a range of essential services, including medical consultations, diagnostic testing, surgical procedures, emergency care, and specialized treatments for various health conditions. Additionally, they offer preventive care, rehabilitation services, and support for patients and families throughout their healthcare journey. With dedicated healthcare professionals and advanced medical technology, hospitals strive to deliver comprehensive and compassionate care to improve the health and well-being of their communities.</p>
+      </div>
+    </div>
+
+
+
+    <!-- ------------------------------------------------------------------------------------- -->
+
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="learn" src="assets/dental.jpg" alt="teeth image">
+          <div class="card-body">
+            <h5>Dental treatments</h5>
+            <p class="card-text">Dental treatment includes preventive care, restorative procedures, and cosmetic enhancements to maintain oral health and improve the appearance of teeth.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="learn" src="assets/bones treatment.jpg" alt="bones">
+          <div class="card-body">
+            <h5>Bones Treatment</h5>
+            <p class="card-text">Bone treatment involves orthopedic surgeries, rehabilitation, and regenerative therapies to address fractures, joint conditions, and bone diseases.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="learn" src="assets/Diagnosis.jpg" alt="">
+          <div class="card-body">
+            <h5>Diagonosis</h5>
+            <p class="card-text">We have the best record in diagonosis of the disease.The Diagonosis is the first step of the treatment.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="learn" src="assets/cardiology-1.jpg" alt="">
+          <div class="card-body">
+            <h5>Cardiology</h5>
+            <p class="card-text">Cardiology focuses on diagnosing and treating heart diseases and conditions, including coronary artery disease, arrhythmias, and heart failure.Cardiologist is the tough job.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="learn" src="assets/Open-Heart-Surgery-1.jpg" alt="">
+          <div class="card-body">
+            <h5>Surgery</h5>
+            <p class="card-text">Surgery involves invasive procedures performed by trained surgeons to treat diseases, injuries, or deformities through manual or technological interventions.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="learn" src="assets/EyeCare.jpg" alt="">
+          <div class="card-body">
+            <h5>Eye care</h5>
+            <p class="card-text">Eye treatment includes diagnostics, corrective procedures like LASIK, and management of conditions such as cataracts and glaucoma to maintain optimal vision health.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">Meet our teams members</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4"> <b><i>Siddharth Gautam , Abhishek Kumar Pandey</i></b></p>
+        <img src="./assets/sid.jpg" alt="" height="200px" width="200px" >
+        <img src="./assets/abhi.png" alt="" height="200px" width="200px">
+      </div>
+    </div>
+
+
+    <!-- ------------------------------------------------------------------------------------- -->
+
+
+    <div class="px-4 py-5 my-5 text-center">
+      <h1 class="display-5 fw-bold text-body-emphasis">Trusted by 10000+ companies around the world</h1>
+    </div>
+
+
+
+    <!-- ------------------------------------------------------ -->
+
+    <div class="d-flex gap-2 justify-content-center py-5">
+      <span
+        class="badge d-flex align-items-center p-1 pe-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-pill">
+        <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Primary
+      </span>
+      <span
+        class="badge d-flex align-items-center p-1 pe-2 text-secondary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-pill">
+        <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Secondary
+      </span>
+      <span
+        class="badge d-flex align-items-center p-1 pe-2 text-success-emphasis bg-success-subtle border border-success-subtle rounded-pill">
+        <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Success
+      </span>
+      <span
+        class="badge d-flex align-items-center p-1 pe-2 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-pill">
+        <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Danger
+      </span>
+      <span
+        class="badge d-flex align-items-center p-1 pe-2 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-pill">
+        <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Warning
+      </span>
+      <span
+        class="badge d-flex align-items-center p-1 pe-2 text-info-emphasis bg-info-subtle border border-info-subtle rounded-pill">
+        <img class="rounded-circle me-1" width="24" height="24" src="https://github.com/mdo.png" alt="">Info
+      </span>
+
+    </div>
+
+
+    <!-- ------------------------------------------------------ -->
+
+    <form>
+      <h5>Subscribe to our newsletter</h5>
+      <p>Monthly digest of what's new and exciting from us.</p>
+      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+        <label for="newsletter1" class="visually-hidden">Email address</label>
+        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+        <button class="btn btn-primary" type="button">Subscribe</button>
+      </div>
+    </form>
+
+
+    <!-- ------------------------------------------------------ -->
+
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p class="text-body-secondary">© 2023</p>
+      </div>
+
+      <div class="col mb-3">
+
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
 
 
 
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <script>
-            document.getElementById("login-form").addEventListener("submit", function (event) {
-              event.preventDefault();
-              // Perform authentication logic here
-              var authenticationSuccessful = true; // Replace with actual authentication logic
-              if (authenticationSuccessful) {
-                window.location.href = "home.html";
-              }
-            });
-          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+
+
+    <script>
+      document.getElementById("login-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        // Perform authentication logic here
+        var authenticationSuccessful = true; // Replace with actual authentication logic
+        if (authenticationSuccessful) {
+          window.location.href = "login.html";
+        }
+      });
+    </script>
+    <script>
+      document.getElementById("signup-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        // Perform authentication logic here
+        var authenticationSuccessful = true; // Replace with actual authentication logic
+        if (authenticationSuccessful) {
+          window.location.href = "signup.html";
+        }
+      });
+    </script>
 </body>
 
 
 
-    
+</html>
